@@ -40,7 +40,7 @@ function App() {
           </ul>
         </div>
       </div>
-      <div className='BodyImage'></div>
+      <img  alt="main"  className='BodyImage' src='https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg?w=996&t=st=1663505375~exp=1663505975~hmac=0749692dfef8019c4e9680e4420d43043636f06ecd99d97365fc763a76b0b177'></img>
       <div className='bottomMain'></div>
     </div>
   );
