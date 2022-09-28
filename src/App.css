@@ -1,3 +1,14 @@
+.space{
+  padding-left: 750px;
+}
+
+.noSpace{
+}
+
+.bar{
+  background-color: #679cc7 !important
+}
+
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 /*===== VARIABLES CSS =====*/

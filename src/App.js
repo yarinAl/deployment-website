@@ -1,40 +1,41 @@
 import './App.css';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
-const logo = require('./images/img1.png')
+
 
 function App() {
+  const img1 = require('./images/img1.png')
   return (
+    <div className="MainContainer">
+    <Navbar className="bar" variant="dark"  bg="dark"  expand="lg">
+      <Container>
+        <Navbar.Brand href="https://www.linkedin.com/in/yarin-alkalai/">LinkedIn</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <div className="space"></div>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#link">Link</Nav.Link>
+            <NavDropdown title="My Apps" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Shopping App</NavDropdown.Item>
+  
+     
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
     <div>
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="https://www.linkedin.com/in/yarin-alkalai/" class="nav__logo">Linkedin</a>
-                </div>
-                
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
 
-                <div class="nav__menu" id="nav-menu">
-                    <div class="nav__close" id="nav-close">
-                        <i class='bx bx-x'></i>
-                    </div>
-
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Blog</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
 
         <main class="l-main">
             <section class="home" id="home">
                 <div class="home__container bd-grid">
                     <div class="home__img">
-                        <img src={logo} alt="" data-speed="-2" class="move"/>
+                        <img src={img1} alt="" data-speed="-2" class="move"/>
                         <img src="assets/img/img2.png" alt="" data-speed="2" class="move"/>
                         <img src="assets/img/img3.png" alt="" data-speed="2" class="move"/>
                         <img src="assets/img/img4.png" alt="" data-speed="-2" class="move"/>
@@ -51,9 +52,8 @@ function App() {
             </section>
         </main>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 
-        <script src="assets/js/main.js"></script>
+    </div>
     </div>
   );
 }
