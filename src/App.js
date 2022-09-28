@@ -9,7 +9,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 function App() {
   const img1 = require('./images/img1.png')
   return (
-    <div className="MainContainer">
+    <div>
     <Navbar className="bar" variant="dark"  bg="dark"  expand="lg">
       <Container>
         <Navbar.Brand href="https://www.linkedin.com/in/yarin-alkalai/">LinkedIn</Navbar.Brand>
@@ -21,28 +21,18 @@ function App() {
             <Nav.Link href="#link">Link</Nav.Link>
             <NavDropdown title="My Apps" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Shopping App</NavDropdown.Item>
-  
-     
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
     <div>
-
-
         <main class="l-main">
             <section class="home" id="home">
                 <div class="home__container bd-grid">
                     <div class="home__img">
                         <img src={img1} alt="" data-speed="-2" class="move"/>
-                        <img src="assets/img/img2.png" alt="" data-speed="2" class="move"/>
-                        <img src="assets/img/img3.png" alt="" data-speed="2" class="move"/>
-                        <img src="assets/img/img4.png" alt="" data-speed="-2" class="move"/>
-                        <img src="assets/img/img5.png" alt="" data-speed="-2" class="move"/>
-                        <img src="assets/img/img6.png" alt="" data-speed="2" class="move"/>
                     </div>
-
                     <div class="home__data">
                         <h1 class="home__title">Yarin's Website<br/> Online Cv</h1>
                         <p class="home__description">Website <br/> Online Cv.</p>
@@ -51,8 +41,6 @@ function App() {
                 </div>
             </section>
         </main>
-
-
     </div>
     </div>
   );
