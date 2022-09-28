@@ -1,0 +1,139 @@
+import './App.css';
+
+const goto = () => {
+  window.location.href = 'https://www.github.com';
+}
+const goto2 = () => {
+  window.location.href = 'https://yarin-website.netlify.app/';
+}
+function App() {
+  return (
+    <div className="MainContainer">
+      <div className='MainHeader'>
+        
+        <div className='topMain'>
+
+        <button onClick={() => { goto2() }} className='btnTop'>
+
+<div className='innerBtnText'>
+  Shopping list App
+</div>
+</button>
+        <button onClick={() => { goto() }} className='btnTop'>
+
+            <div className='innerBtnText'>
+              My Github
+            </div>
+          </button>
+          Yarin's Website
+        </div>
+        <div className='navBarMain'>
+          <ul>
+            <li>Home</li>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <li>News</li>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <li>Contact</li>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <li>About</li>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+          </ul>
+        </div>
+      </div>
+      <img  alt="main"  className='BodyImage' src='https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg?w=996&t=st=1663505375~exp=1663505975~hmac=0749692dfef8019c4e9680e4420d43043636f06ecd99d97365fc763a76b0b177'></img>
+      <div className='bottomMain'></div>
+    </div>
+  );
+}
+
+export default App;
+
+
+css
+
+
+.MainContainer{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  text-align: center;
+}
+.btnTop{
+  background-color: #eb5757;
+  border-radius: 20px;
+  margin-right: 20px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 9px #999;
+
+}
+.btnTop:hover{
+  background-color: #d36e6e;
+}
+.btnTop:active{
+
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.innerBtnText{
+
+padding: 5px;
+}
+
+.MainHeader{
+  position: sticky;
+  background-color: #eb5757;
+  height: 145px;
+  width: 100%;
+  display: block;
+}
+.topMain{
+  background-color: #222;
+  height: 55px;
+  width: 100%;
+  padding-top: 20px;
+  color: #f9f9f9;
+  font-size: 18px;
+
+}
+li {
+  display: inline;
+  color: #222;
+}
+.navBarMain{
+
+}
+.BodyImage{
+
+  height: 70%;
+  width: 100%;
+
+}
+.bottomMain{
+
+  background-color: #222 ;
+height: 100%;
+}
+
+@media only screen and (max-width: 400px) {
+  .btnTop{
+    background-color: #eb5757;
+    border-radius: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 9px #999;
+  
+  }
+  .BodyImage{
+    background-image: url('https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg?w=996&t=st=1663505375~exp=1663505975~hmac=0749692dfef8019c4e9680e4420d43043636f06ecd99d97365fc763a76b0b177');
+    background-repeat: no-repeat;
+  background-size: cover;
+    height: 70%;
+    width: 100%;
+  
+  }
+}

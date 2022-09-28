@@ -1,47 +1,59 @@
 import './App.css';
 
-const goto = () => {
-  window.location.href = 'https://www.github.com';
-}
-const goto2 = () => {
-  window.location.href = 'https://yarin-website.netlify.app/';
-}
+const logo = require('./images/img1.png')
+
 function App() {
   return (
-    <div className="MainContainer">
-      <div className='MainHeader'>
-        
-        <div className='topMain'>
+    <div>
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="https://www.linkedin.com/in/yarin-alkalai/" class="nav__logo">Linkedin</a>
+                </div>
+                
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
 
-        <button onClick={() => { goto2() }} className='btnTop'>
+                <div class="nav__menu" id="nav-menu">
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
 
-<div className='innerBtnText'>
-  Shopping list App
-</div>
-</button>
-        <button onClick={() => { goto() }} className='btnTop'>
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Blog</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
-            <div className='innerBtnText'>
-              My Github
-            </div>
-          </button>
-          Yarin's Website
-        </div>
-        <div className='navBarMain'>
-          <ul>
-            <li>Home</li>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <li>News</li>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <li>Contact</li>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <li>About</li>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-          </ul>
-        </div>
-      </div>
-      <img  alt="main"  className='BodyImage' src='https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg?w=996&t=st=1663505375~exp=1663505975~hmac=0749692dfef8019c4e9680e4420d43043636f06ecd99d97365fc763a76b0b177'></img>
-      <div className='bottomMain'></div>
+        <main class="l-main">
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+                    <div class="home__img">
+                        <img src={logo} alt="" data-speed="-2" class="move"/>
+                        <img src="assets/img/img2.png" alt="" data-speed="2" class="move"/>
+                        <img src="assets/img/img3.png" alt="" data-speed="2" class="move"/>
+                        <img src="assets/img/img4.png" alt="" data-speed="-2" class="move"/>
+                        <img src="assets/img/img5.png" alt="" data-speed="-2" class="move"/>
+                        <img src="assets/img/img6.png" alt="" data-speed="2" class="move"/>
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Yarin's Website<br/> Online Cv</h1>
+                        <p class="home__description">Website <br/> Online Cv.</p>
+                        <a href="https://github.com/yarinAl" class="home__button">My Github</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+        <script src="assets/js/main.js"></script>
     </div>
   );
 }
