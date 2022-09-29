@@ -27,16 +27,16 @@ function App() {
       </Container>
     </Navbar>
     <div>
-        <main class="l-main">
-            <section class="home" id="home">
-                <div class="home__container bd-grid">
-                    <div class="home__img">
-                        <img src={img1} alt="" data-speed="-2" class="move"/>
+        <main className="l-main">
+            <section className="home" id="home">
+                <div className="home__container bd-grid">
+                    <div className="home__img">
+                        <img src={img1} alt="" data-speed="-2" className="move"/>
                     </div>
-                    <div class="home__data">
-                        <h1 class="home__title">Yarin's Website<br/> Online Cv</h1>
-                        <p class="home__description">Website <br/> Online Cv.</p>
-                        <a href="https://github.com/yarinAl" class="home__button">My Github</a>
+                    <div className="home__data">
+                        <h1 className="home__title">Yarin's Website<br/> Online Cv</h1>
+                        <p className="home__description">Website <br/> Online Cv.</p>
+                        <a href="https://github.com/yarinAl" className="home__button">My Github</a>
                     </div>
                 </div>
             </section>
