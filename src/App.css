@@ -4,7 +4,7 @@
 
 }
 .imgDesgin{
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 .endStyleTxt{
@@ -140,7 +140,7 @@ font-size: 24px;
 /*===== End text animation design =====*/
 
 .bar{
-  background-color: #679cc7 !important
+  background-color: #3679b0 !important
 }
 
 /*===== GOOGLE FONTS =====*/
@@ -150,7 +150,7 @@ font-size: 24px;
   --header-height: 3rem;
 
   /*===== Colors =====*/
-  --first-color: #679cc7;
+  --first-color: #3679b0;
   --first-color-dark: #C1576A;
   --first-color-darken: #A83E51;
   --white-color: #FCF8F8;
