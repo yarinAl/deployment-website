@@ -4,7 +4,12 @@
 
 }
 .imgDesgin{
-  opacity: 0.5;
+  opacity: 0.4;
+}
+
+.endStyleTxt{
+font-family: Arial, Helvetica, sans-serif !important;
+font-size: large !important
 }
 /* design for text animation */
 
@@ -12,14 +17,14 @@
 
 
 .bdym {
-font-size: 20px;
+font-size: 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-bottom: 100px;
-  font-weight: bold;
-  color: rgb(251, 251, 255);
+  /* font-weight: bold; */
+  color: rgb(255, 255, 255);
   
 }
 
@@ -36,10 +41,16 @@ font-size: 20px;
   }
 }
 
+@font-face {
+  font-family: myfont;
+  src: url('./fonts/GochiHand-Regular.ttf');
+}
+
 .myH1 {
   display: inline-block;
   opacity: 0;
   filter: blur(4px);
+  font-family: myfont;
 }
 
 .myH1:nth-child(1) {
@@ -114,6 +125,12 @@ font-size: 20px;
   animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
+.myH1:nth-child(19) {
+  animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.myH1:nth-child(20) {
+  animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
 @keyframes fade-in {
   100% {
     opacity: 1;

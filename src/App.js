@@ -34,7 +34,7 @@ function App() {
                 <img src={img1} alt="" data-speed="-2" className="move imgDesgin" />
                 <div className='bdym'>
                   <div className='myH12'>
-                    <div className='myH1'>There &nbsp;</div>
+                    <div className='myH1'>"There &nbsp;</div>
                     <div className='myH1'>are &nbsp;</div>
                     <div className='myH1'>no &nbsp;</div>
                     <div className='myH1'>limits &nbsp;</div>
@@ -51,8 +51,12 @@ function App() {
                     <div className='myH1'>on &nbsp;</div>
                     <div className='myH1'>your &nbsp;</div>
                     <div className='myH1'>own &nbsp;</div>
-                    <div className='myH1'>thinking.</div>
-                  </div></div>
+                    <div className='myH1'>thinking." </div>
+                    <br className='myH1' />
+                    <div className='myH1 endStyleTxt'>Brian Tracy</div>
+
+                  </div>
+                  </div>
               </div>
               <div className="home__data">
                 <h1 className="home__title">Yarin's Website<br /> Online Cv</h1>
