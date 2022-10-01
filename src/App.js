@@ -12,14 +12,14 @@ function App() {
     <div>
       <Navbar className="bar" variant="dark" bg="dark" expand="lg">
         <Container>
-          <Navbar.Brand href="https://www.linkedin.com/in/yarin-alkalai/">LinkedIn</Navbar.Brand>
+          <Navbar.Brand className='hoverLinked' href="https://www.linkedin.com/in/yarin-alkalai/">LinkedIn</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <div className="space"></div>
             <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Link</Nav.Link>
-              <NavDropdown title="My Apps" id="basic-nav-dropdown">
+              <Nav.Link className='hoverLinks' href="#home">Home</Nav.Link>
+              <Nav.Link className='hoverLinks' href="#link">Link</Nav.Link>
+              <NavDropdown className='hoverLinks' title="My Apps" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Shopping App</NavDropdown.Item>
               </NavDropdown>
             </Nav>

@@ -1,3 +1,10 @@
+.hoverLinks:hover{
+  color: white !important;
+}
+.hoverLinked:hover{
+  color: yellow !important;
+
+}
 .space{
   padding-left: 70%;
   margin: 0;
