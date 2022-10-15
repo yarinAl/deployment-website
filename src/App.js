@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 
 
 
@@ -18,10 +19,30 @@ function App() {
             <div className="space"></div>
             <Nav className="me-auto">
               <Nav.Link className='hoverLinks' href="#home">Home</Nav.Link>
-              <Nav.Link className='hoverLinks' href="#link">Link</Nav.Link>
-              <NavDropdown className='hoverLinks' title="My Apps" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Shopping App</NavDropdown.Item>
-              </NavDropdown>
+              <OverlayTrigger
+                key='bottom'
+                placement='bottom'
+                overlay={
+                  <Tooltip id={`tooltip-bottom`}>
+                    not yet <strong>available</strong>.
+                  </Tooltip>
+                }
+              >
+                <Nav.Link className='hoverLinks' href="#link">Blogs</Nav.Link>
+              </OverlayTrigger>
+              <OverlayTrigger
+                key='bottom'
+                placement='bottom'
+                overlay={
+                  <Tooltip id={`tooltip-bottom`}>
+                    not yet <strong>available</strong>.
+                  </Tooltip>
+                }
+              >
+                <NavDropdown className='hoverLinks' title="My Apps" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="#action/3.1">Shopping App</NavDropdown.Item>
+                </NavDropdown>
+              </OverlayTrigger>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -54,9 +75,8 @@ function App() {
                     <div className='myH1'>thinking." </div>
                     <br className='myH1' />
                     <div className='myH1 endStyleTxt'>Brian Tracy</div>
-
                   </div>
-                  </div>
+                </div>
               </div>
               <div className="home__data">
                 <h1 className="home__title">Yarin's Website<br /> Online Cv</h1>
