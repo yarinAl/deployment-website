@@ -3,14 +3,28 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { OverlayTrigger, Tooltip } from 'react-bootstrap';
+import { Button, Carousel, OverlayTrigger, Tooltip } from 'react-bootstrap';
+import { useState } from 'react';
 
 
 
 function App() {
+  
   const img1 = require('./images/img1.png')
+  const cvs = require('./images/cv.png')
+  const [index, setIndex] = useState(0);
+
+  const switchSlide = () => {
+      if(index===0)
+      setIndex(1);
+      else 
+      setIndex(0)
+
+  };
   return (
     <div>
+      <Carousel activeIndex={index} interval={null} controls={false} indicators={false}>
+      <Carousel.Item>
       <Navbar className="bar" variant="dark" bg="dark" expand="lg">
         <Container>
           <Navbar.Brand className='hoverLinked' href="https://www.linkedin.com/in/yarin-alkalai/">LinkedIn</Navbar.Brand>
@@ -82,11 +96,19 @@ function App() {
                 <h1 className="home__title">Yarin's Website<br /> Online Cv</h1>
                 <p className="home__description">Website <br /> Online Cv.</p>
                 <a href="https://github.com/yarinAl" className="home__button">My Github</a>
+                <Button variant="primary" title='Cv' className="home__button" onClick={()=>switchSlide()}>Cvs - קורות חיים </Button>
               </div>
             </div>
+            <Button variant="primary" onClick={()=>switchSlide()}/>
           </section>
         </main>
       </div>
+      </Carousel.Item>
+      <Carousel.Item>
+      <Button variant="primary" title='Cv' className="home__button" onClick={()=>switchSlide()}>Home </Button>
+      <img src={cvs} alt="" data-speed="-2" />
+     </Carousel.Item>
+    </Carousel>
     </div>
   );
 }

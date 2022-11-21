@@ -390,3 +390,17 @@ img{
     width: 604px;
   }
 }
+
+.nextArrow{
+  width: 42px;
+  height: 42px;
+  margin-left: 100px;
+
+}
+
+.prevArrow{
+  width: 32px;
+  height: 32px;
+  margin-right: 150px;
+
+}
