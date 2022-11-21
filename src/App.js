@@ -93,8 +93,8 @@ function App() {
                 </div>
               </div>
               <div className="home__data">
-                <h1 className="home__title">Yarin's Website<br /> Online Cv</h1>
-                <p className="home__description">Website <br /> Online Cv.</p>
+                <h1 className="home__title">Yarin Alkalai<br /> Online Cvs</h1>
+                <p className="home__description">welcome <br /> friends (◕ ◡ ◕)</p>
                 <a href="https://github.com/yarinAl" className="home__button">My Github</a>
                 <Button variant="primary" title='Cv' className="home__button" onClick={()=>switchSlide()}>Cvs - קורות חיים </Button>
               </div>
