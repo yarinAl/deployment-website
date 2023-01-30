@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Button, Carousel, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { useState } from 'react';
-import { Viewer, Worker } from '@react-pdf-viewer/core';
+// import { Viewer, Worker } from '@react-pdf-viewer/core';
 // Import the styles
 import '@react-pdf-viewer/core/lib/styles/index.css';
 
@@ -13,8 +13,8 @@ import '@react-pdf-viewer/core/lib/styles/index.css';
 function App() {
   
   const img1 = require('./images/img1.png')
-  const pdfCvs = require('./images/Yarin_Alkalai.pdf')
-  // const imgCvs = require('./images/cv.png')
+  // const pdfCvs = require('./images/Yarin_Alkalai.pdf')
+  const imgCvs = require('./images/cv.png')
 
   const [index, setIndex] = useState(0);
 
@@ -109,13 +109,10 @@ function App() {
       </div>
       </Carousel.Item>
       <Carousel.Item>
-        <div className='pdfView'>
       <Button variant="primary" title='Cv' className="home__button" onClick={()=>switchSlide()}>Home </Button>
-      {/* <img src={imgCvs} alt="" data-speed="-2" /> */}
-      
-    <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.2.146/build/pdf.worker.min.js" > 
-    <Viewer  fileUrl={pdfCvs}/></Worker>
-    </div>
+      <img src={imgCvs} alt="" data-speed="-2" />
+    {/* <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.2.146/build/pdf.worker.min.js" > 
+    <Viewer  fileUrl={pdfCvs}/></Worker> */}
      </Carousel.Item>
 
     </Carousel>
