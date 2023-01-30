@@ -114,19 +114,7 @@ function App() {
       {/* <img src={imgCvs} alt="" data-speed="-2" /> */}
       
     <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.2.146/build/pdf.worker.min.js" > 
-
-    <div
-    style={{
-        border: '1px solid rgba(0, 0, 0, 0.3)',
-        height: '100% !important',
-        width : '100% !important'
-    }}
->
-    <Viewer  fileUrl={pdfCvs}/>
-    </div>
-    
-    
-    </Worker>
+    <Viewer  fileUrl={pdfCvs}/></Worker>
     </div>
      </Carousel.Item>
 
