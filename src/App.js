@@ -6,14 +6,13 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Button, Carousel, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { useState } from 'react';
 // import { Viewer, Worker } from '@react-pdf-viewer/core';
-// Import the styles
-import '@react-pdf-viewer/core/lib/styles/index.css';
+// import '@react-pdf-viewer/core/lib/styles/index.css';
 
 
 function App() {
   
   const img1 = require('./images/img1.png')
-  // const pdfCvs = require('./images/Yarin_Alkalai.pdf')
+  //  const pdfCvs = require('./images/Yarin_Alkalai.pdf')
   const imgCvs = require('./images/cv.png')
 
   const [index, setIndex] = useState(0);

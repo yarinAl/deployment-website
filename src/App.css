@@ -405,7 +405,9 @@ img{
 
 }
 
-.pdfView{
-  width: 100% !important;
-  height: 100% !important;
+
+
+canvas{
+  width:   375px !important;
+  height: 405px !important;
 }
