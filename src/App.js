@@ -112,7 +112,7 @@ function App() {
       <Button variant="primary" title='Cv' className="home__button" onClick={()=>switchSlide()}>Home </Button>
       {/* <img src={imgCvs} alt="" data-speed="-2" /> */}
       
-    <Worker className="pdfView" workerUrl="https://unpkg.com/pdfjs-dist@3.2.146/build/pdf.worker.min.js" > <Viewer fileUrl={pdfCvs}/></Worker>
+    <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.2.146/build/pdf.worker.min.js" > <Viewer  className="pdfView" fileUrl={pdfCvs}/></Worker>
      </Carousel.Item>
     </Carousel>
     </div>
