@@ -109,18 +109,27 @@ function App() {
       </div>
       </Carousel.Item>
       <Carousel.Item>
+        <div className='pdfView'>
       <Button variant="primary" title='Cv' className="home__button" onClick={()=>switchSlide()}>Home </Button>
       {/* <img src={imgCvs} alt="" data-speed="-2" /> */}
       
-    <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.2.146/build/pdf.worker.min.js" ><div
+    <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.2.146/build/pdf.worker.min.js" > 
+
+    <div
     style={{
         border: '1px solid rgba(0, 0, 0, 0.3)',
-        height: '100%',
-        width: '100%'
+        height: '100% !important',
+        width : '100% !important'
     }}
-> <Viewer  className="pdfView" fileUrl={pdfCvs}/>
-</div></Worker>
+>
+    <Viewer  fileUrl={pdfCvs}/>
+    </div>
+    
+    
+    </Worker>
+    </div>
      </Carousel.Item>
+
     </Carousel>
     </div>
   );

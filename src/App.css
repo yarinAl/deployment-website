@@ -408,4 +408,5 @@ img{
 .pdfView{
   width: 100% !important;
   height: 100% !important;
+  box-sizing: border-box;
 }
