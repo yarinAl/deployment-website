@@ -109,11 +109,15 @@ function App() {
       </Carousel.Item>
       <Carousel.Item>
       <Button variant="primary" title='Cv' className="home__button" onClick={()=>switchSlide()}>Home </Button>
-      <img src={imgCvs} alt="" data-speed="-2" />
+      {/* <img src={imgCvs} alt="" data-speed="-2" /> */}
     {/* <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.2.146/build/pdf.worker.min.js" > 
     <Viewer  fileUrl={pdfCvs}/></Worker> */}
      </Carousel.Item>
+     <br></br>
+     <br></br>
+     <br></br>
 
+       Removed from here for now
     </Carousel>
     </div>
   );
