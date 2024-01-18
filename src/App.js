@@ -9,9 +9,9 @@ import './App.css'
 // import '@react-pdf-viewer/core/lib/styles/index.css';
 
 function App() {
-  const img1 = require('./images/img1.png')
-  //  const pdfCvs = require('./images/Yarin_Alkalai.pdf')
-  const imgCvs = require('./images/cv2.png')
+  const img1 = require('./cvs/img1.png')
+  const pdfCvs = require('./cvs/Yarin Alkalai.pdf')
+  // const imgCvs = require('./cvs/resume.png')
 
   const [index, setIndex] = useState(0)
 
@@ -153,10 +153,9 @@ function App() {
           >
             Home{' '}
           </Button>
-          {/* <img src={imgCvs} alt="" data-speed="-2" /> */}
-          {/* <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.2.146/build/pdf.worker.min.js" > 
-    <Viewer  fileUrl={pdfCvs}/></Worker> */}
-          <img src={imgCvs} alt='' data-speed='-2' />
+          <embed src={pdfCvs} width='800px' height='900px' />
+          {/* <iframe src={wordCvs} width='800px' height='600px'></iframe>
+          <img src={imgCvs} alt='' data-speed='-2' /> */}
         </Carousel.Item>
         <br></br>
         <br></br>
